@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "CAIXA Std";
+  src: url("/assets/fonts/caixa-std/CAIXAStd-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CAIXA Std";
+  src: url("/assets/fonts/caixa-std/CAIXAStd-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CAIXA Std";
+  src: url("/assets/fonts/caixa-std/CAIXAStd-Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CAIXA Std";
+  src: url("/assets/fonts/caixa-std/CAIXAStd-BookItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CAIXA Std";
+  src: url("/assets/fonts/caixa-std/CAIXAStd-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CAIXA Std";
+  src: url("/assets/fonts/caixa-std/CAIXAStd-Italic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CAIXA Std";
+  src: url("/assets/fonts/caixa-std/CAIXAStd-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CAIXA Std";
+  src: url("/assets/fonts/caixa-std/CAIXAStd-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CAIXA Std";
+  src: url("/assets/fonts/caixa-std/CAIXAStd-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CAIXA Std";
+  src: url("/assets/fonts/caixa-std/CAIXAStd-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CAIXA Std";
+  src: url("/assets/fonts/caixa-std/CAIXAStd-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CAIXA Std";
+  src: url("/assets/fonts/caixa-std/CAIXAStd-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "CAIXA Std", system-ui, -apple-system, sans-serif;
+
+  /* CAIXA Consórcio — Design Tokens */
+  --color-caixa-blue-50: #e8f4fc;
+  --color-caixa-blue-100: #c5e3f6;
+  --color-caixa-blue-200: #9ecfef;
+  --color-caixa-blue-300: #6eb8e5;
+  --color-caixa-blue-400: #3a9fd9;
+  --color-caixa-blue-500: #005ca9;
+  --color-caixa-blue-600: #004e8f;
+  --color-caixa-blue-700: #003d6b;
+  --color-caixa-blue-800: #002d50;
+  --color-caixa-blue-900: #001d35;
+
+  --color-consorcio-orange-50: #fff8ed;
+  --color-consorcio-orange-100: #ffecd0;
+  --color-consorcio-orange-200: #ffd69a;
+  --color-consorcio-orange-300: #ffba5c;
+  --color-consorcio-orange-400: #f39200;
+  --color-consorcio-orange-500: #e07d00;
+  --color-consorcio-orange-600: #c46a00;
+
+  --color-neutral-50: #f8f9fa;
+  --color-neutral-100: #f1f3f5;
+  --color-neutral-200: #e9ecef;
+  --color-neutral-300: #dee2e6;
+  --color-neutral-400: #ced4da;
+  --color-neutral-500: #adb5bd;
+  --color-neutral-600: #868e96;
+  --color-neutral-700: #495057;
+  --color-neutral-800: #343a40;
+  --color-neutral-900: #212529;
+
+  --color-success-50: #e8f5e9;
+  --color-success-500: #2e7d32;
+  --color-success-700: #1b5e20;
+
+  --color-error-50: #ffebee;
+  --color-error-500: #c62828;
+  --color-error-700: #b71c1c;
+
+  --color-warning-50: #fff3e0;
+  --color-warning-500: #f57c00;
+  --color-warning-700: #e65100;
+
+  --color-info-50: #e3f2fd;
+  --color-info-500: #1565c0;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-neutral-50 text-neutral-900;
+  }
+
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-caixa-blue-500;
+  }
+}
