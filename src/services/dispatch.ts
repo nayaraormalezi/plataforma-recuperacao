@@ -105,5 +105,6 @@ export function isChannelAvailable(
   channel: DispatchChannel,
   proposal: Proposal,
 ): boolean {
+  if (channel === 'sms') return false;
   return getDestino(channel, proposal) !== null;
 }
